@@ -244,7 +244,7 @@ export default function TermsOfService() {
                   For questions regarding these Terms of Service, please contact:
                 </p>
                 <p className="mt-2 font-medium text-foreground">
-                  contact@kevinroysoncreative.com
+                  kevinrysn@kevinroysoncreative.com
                 </p>
               </section>
 
