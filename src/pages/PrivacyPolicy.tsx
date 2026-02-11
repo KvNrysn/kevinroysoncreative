@@ -1,132 +1,173 @@
- import { Layout } from "@/components/Layout";
- import { motion } from "framer-motion";
- 
- export default function PrivacyPolicy() {
-   return (
-     <Layout>
-       <section className="section-padding">
-         <div className="container-main">
-           <motion.div
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.6 }}
-             className="max-w-4xl mx-auto"
-           >
-             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-               Privacy Policy
-             </h1>
-             <p className="text-muted-foreground mb-8">
-               Last updated: February 5, 2026
-             </p>
- 
-             <div className="space-y-8 text-muted-foreground">
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   1. Information We Collect
-                 </h2>
-                 <p className="mb-4">
-                   We collect information you provide directly to us, such as when you fill out a contact form, 
-                   request a quote, or communicate with us via email. This may include:
-                 </p>
-                 <ul className="list-disc list-inside space-y-2 ml-4">
-                   <li>Name and contact information (email address, phone number)</li>
-                   <li>Project details and requirements</li>
-                   <li>Payment information for completed transactions</li>
-                   <li>Any other information you choose to provide</li>
-                 </ul>
-               </section>
- 
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   2. How We Use Your Information
-                 </h2>
-                 <p className="mb-4">
-                   We use the information we collect to:
-                 </p>
-                 <ul className="list-disc list-inside space-y-2 ml-4">
-                   <li>Provide, maintain, and improve our video editing services</li>
-                   <li>Respond to your inquiries and fulfill your requests</li>
-                   <li>Send you project updates and communications</li>
-                   <li>Process payments and prevent fraud</li>
-                   <li>Comply with legal obligations</li>
-                 </ul>
-               </section>
- 
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   3. Information Sharing
-                 </h2>
-                 <p>
-                   We do not sell, trade, or otherwise transfer your personal information to third parties 
-                   without your consent, except as necessary to provide our services or as required by law. 
-                   We may share information with trusted service providers who assist us in operating our 
-                   business, provided they agree to keep this information confidential.
-                 </p>
-               </section>
- 
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   4. Data Security
-                 </h2>
-                 <p>
-                   We implement appropriate technical and organizational measures to protect your personal 
-                   information against unauthorized access, alteration, disclosure, or destruction. However, 
-                   no method of transmission over the Internet is 100% secure, and we cannot guarantee 
-                   absolute security.
-                 </p>
-               </section>
- 
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   5. Your Rights
-                 </h2>
-                 <p className="mb-4">
-                   You have the right to:
-                 </p>
-                 <ul className="list-disc list-inside space-y-2 ml-4">
-                   <li>Access the personal information we hold about you</li>
-                   <li>Request correction of inaccurate information</li>
-                   <li>Request deletion of your personal information</li>
-                   <li>Opt out of marketing communications</li>
-                 </ul>
-               </section>
- 
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   6. Cookies
-                 </h2>
-                 <p>
-                   Our website may use cookies to enhance your browsing experience. You can choose to 
-                   disable cookies through your browser settings, though this may affect some website 
-                   functionality.
-                 </p>
-               </section>
- 
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   7. Changes to This Policy
-                 </h2>
-                 <p>
-                   We may update this Privacy Policy from time to time. We will notify you of any changes 
-                   by posting the new policy on this page and updating the "Last updated" date.
-                 </p>
-               </section>
- 
-               <section>
-                 <h2 className="text-2xl font-semibold text-foreground mb-4">
-                   8. Contact Us
-                 </h2>
-                 <p>
-                   If you have any questions about this Privacy Policy, please contact us at{" "}
-                   <a href="mailto:privacy@videoedit.com" className="text-primary hover:underline">
-                     privacy@videoedit.com
-                   </a>
-                 </p>
-               </section>
-             </div>
-           </motion.div>
-         </div>
-       </section>
-     </Layout>
-   );
- }
+import { Layout } from "@/components/Layout";
+import { motion } from "framer-motion";
+
+export default function PrivacyPolicy() {
+  return (
+    <Layout>
+      <section className="section-padding">
+        <div className="container-main">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+              Privacy Policy
+            </h1>
+            <p className="text-muted-foreground mb-8">
+              Last updated: February 11, 2026
+            </p>
+
+            <div className="space-y-8 text-muted-foreground">
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  1. Introduction
+                </h2>
+                <p>
+                  KevinRoysonCreative ("we", "us", or "our") respects your privacy. 
+                  This Privacy Policy explains how information is collected, used, 
+                  and protected when you visit this website or engage our services.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  2. Information We Collect
+                </h2>
+                <p className="mb-4">
+                  We may collect the following types of information:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Name and email address submitted via contact forms</li>
+                  <li>Project details and messages you provide</li>
+                  <li>Scheduling information submitted via Calendly</li>
+                  <li>Files, assets, and materials provided for editing services</li>
+                  <li>Basic technical data such as IP address, browser type, and device information</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  3. How Your Information Is Used
+                </h2>
+                <p className="mb-4">
+                  Information is used to:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Respond to inquiries and communication requests</li>
+                  <li>Provide contracted services</li>
+                  <li>Schedule discovery calls</li>
+                  <li>Manage workflow and collaboration</li>
+                  <li>Improve service quality and client experience</li>
+                </ul>
+                <p className="mt-4">
+                  We do not sell or rent personal information to third parties.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  4. Third-Party Services
+                </h2>
+                <p className="mb-4">
+                  This website may use trusted third-party providers including:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Vercel (website hosting)</li>
+                  <li>Google Workspace (email services)</li>
+                  <li>Calendly (appointment scheduling)</li>
+                </ul>
+                <p className="mt-4">
+                  These providers process data in accordance with their own privacy policies.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  5. Client Files & Confidential Materials
+                </h2>
+                <p>
+                  All client materials, footage, and project files are treated as confidential. 
+                  Files are used solely for the purpose of providing agreed services. 
+                  We do not distribute or disclose client content without permission.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  6. Data Retention
+                </h2>
+                <p>
+                  Contact form submissions and email communications may be retained 
+                  for business record-keeping purposes. Project files may be retained 
+                  for workflow continuity unless otherwise agreed.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  7. Data Security
+                </h2>
+                <p>
+                  Reasonable technical and organizational measures are used to 
+                  protect your information. However, no method of transmission 
+                  over the internet can be guaranteed as completely secure.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  8. Your Rights
+                </h2>
+                <p>
+                  You may request access, correction, or deletion of your personal 
+                  information by contacting us directly. Requests will be handled 
+                  in accordance with applicable laws.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  9. International Users
+                </h2>
+                <p>
+                  This website may be accessed globally. By using our services, 
+                  you consent to the processing of your information in accordance 
+                  with this Privacy Policy.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  10. Changes to This Policy
+                </h2>
+                <p>
+                  This Privacy Policy may be updated periodically. The updated 
+                  version will be posted on this page with a revised "Last updated" date.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-foreground mb-4">
+                  11. Contact
+                </h2>
+                <p>
+                  For privacy-related questions, contact:{" "}
+                  <a
+                    href="mailto:kevinrysn@kevinroysoncreative.com"
+                    className="text-primary hover:underline"
+                  >
+                    kevinrysn@kevinroysoncreative.com
+                  </a>
+                </p>
+              </section>
+
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
