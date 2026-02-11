@@ -63,46 +63,61 @@ export default function Contact() {
 
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  setIsSubmitting(true);
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
 
-  const payload = {
-    name: formData.get("name"),
-    email: formData.get("email"),
-    subject: formData.get("subject"),
-    message: formData.get("message"),
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (res.status === 200 && data.success) {
+        setIsSubmitted(true);
+
+        toast({
+          title: "Message sent!",
+          description: "We'll reply within 24 hours.",
+        });
+
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+
+      } else {
+        throw new Error(data.message || "Unknown error");
+      }
+
+    } catch (error) {
+      console.error("Frontend error:", error);
+
+      toast({
+        variant: "destructive",
+        title: "Something went wrong",
+        description: "Please try again or email me directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  try {
-    const res = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
-
-    if (!res.ok) throw new Error("Failed");
-
-    setIsSubmitted(true);
-    toast({
-      title: "Message sent!",
-      description: "We'll reply within 24 hours.",
-    });
-
-    e.currentTarget.reset();
-  } catch (err) {
-    toast({
-      variant: "destructive",
-      title: "Something went wrong",
-      description: "Please try again or email me directly.",
-    });
-  } finally {
-    setIsSubmitting(false);
-  }
-  };
 
 
 
