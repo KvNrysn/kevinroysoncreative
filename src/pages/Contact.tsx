@@ -18,9 +18,9 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    label: "Phone",
+    label: "Phone (WhatsApp)",
     value: "+62 822-9859-9971",
-    description: "Mon-Fri from 9am to 6pm",
+    description: "Drop me a message anytime",
   },
   {
     icon: Clock,

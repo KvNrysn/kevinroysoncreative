@@ -21,7 +21,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/kevin-royson", label: "LinkedIn" },
   { icon: Twitter, href: "https://x.com/KR_Creative511", label: "Twitter" },
 ];
 
