@@ -276,7 +276,19 @@ export function ExpandedOffersSection() {
             );
           })}
         </div>
-      </div>
+
+        {/* Custom Service Note */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mt-20"
+          >
+            <p className="text-sm text-muted-foreground">
+              If your needs don’t fit these structures, feel free to request a customized solution.
+            </p>
+          </motion.div>
+        </div>
     </section>
   );
 }

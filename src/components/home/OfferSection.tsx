@@ -155,18 +155,21 @@ export function OfferSection() {
           ))}
         </motion.div>
 
-        {/* CTA Button */}
+        {/* CTA Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex justify-center mt-12"
+          className="flex flex-col items-center mt-12 text-center"
         >
-          <Link to="/contact">
-            <Button variant="hero" size="lg">
-              Reach Out to Get Started
-            </Button>
-          </Link>
+        <Link to="/contact">
+          <Button variant="hero" size="lg">
+            Reach Out to Get Started
+          </Button>
+        </Link>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Need something customized? Feel free to request a tailored solution.
+          </p>
         </motion.div>
       </div>
     </section>
