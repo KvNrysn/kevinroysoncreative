@@ -8,13 +8,13 @@ const proofVideos = [
     embedUrl: "https://www.youtube.com/embed/4a_c8DX-KuU",
     channel: "Jason West",
     context:
-      "Used visual shifts to illustrate key statements and align the edit with patterns this channel's audience consistently responds to.",
+      "Edited with clear visual guidance, deliberate attention resets, and consistent structural sequencing aligned with the channel's audience behavior.",
   },
   {
     embedUrl: "https://www.youtube.com/embed/Y_n8xGRJq1s",
     channel: "Ritesh Verma",
     context:
-      "Edited with clear visual guidance, intentional pacing shifts, and consistent visual reinforcement of the main storytelling points.",
+      "Structured with deliberate pacing control, visual emphasis, and guided framing to reinforce key narrative moments.",
   },
 ];
 
@@ -39,9 +39,9 @@ export function ProofSection() {
             Proof of Work
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            Long-Form Videos That Performed
+            Long-Form Work
             <br />
-            <span className="text-muted-foreground">Above Channel Average</span>
+            <span className="text-muted-foreground">Structured for Performance</span>
           </h2>
         </motion.div>
 

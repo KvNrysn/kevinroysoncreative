@@ -37,7 +37,7 @@ export function Footer() {
               <span className="font-semibold text-lg text-foreground">KevinRoysonCreative</span>
             </Link>
             <p className="text-muted-foreground text-sm mb-6">
-              Retention and trust focused YouTube editing for business creators who want videos that suit your goal.
+              Strategic YouTube editing engineered to increase retention, authority, and long-term growth.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (

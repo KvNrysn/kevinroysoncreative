@@ -3,34 +3,34 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Onboarding & Alignment",
+    title: "Alignment & Direction",
     description:
-      "We start with a short call or written brief to understand your goals, audience, and current workflow. This sets expectations on pacing, structure, and creative direction before editing begins.",
+      "We start with a focused call or structured brief to clarify your goals, audience profile, and content positioning. This defines pacing expectations, structural priorities, and what “success” looks like before editing begins. No guessing. No assumptions.",
   },
   {
     number: "02",
     title: "Footage & Asset Handoff",
     description:
-      "You send raw footage, references, and notes through a shared workspace. This keeps assets, context, and communication centralized from the start.",
+      "Raw footage, references, and notes are shared through a centralized workspace. Keeping assets and communication organized from the start reduces friction and speeds up execution. Clarity early prevents revisions later.",
   },
   {
     number: "03",
-    title: "Editing & Decision-Making",
+    title: "Structured Editing & Creative Decisions",
     description:
-      "Edits are made with structure, pacing, and message delivery in mind. Creative decisions are intentional, especially when testing changes from previous content or evolving a format.",
+      "Edits are built around retention, clarity, and message reinforcement not just visual polish. Every pacing shift, visual reset, and emphasis point is intentional. If we’re testing new structural approaches, they’re implemented strategically not randomly.",
   },
   {
     number: "04",
-    title: "Feedback & Revisions",
+    title: "Focused Feedback & Refinement",
     description:
-      "Feedback is structured and focused on clarity and intent rather than endless micro-tweaks. For ongoing clients, revisions and discussions happen directly inside Frame.io to keep iterations fast and organized.",
+      "Feedback is centered on clarity and outcome, not endless micro-adjustments. Revisions are structured to strengthen the message and retention flow. For ongoing clients, discussions happen directly inside Frame.io to keep iteration fast and organized.",
   },
   {
     number: "05",
     title: "Ongoing Optimization",
     badge: "Retainers Only",
     description:
-      "For retainers, performance insights from past videos inform future edits. Patterns are identified, ideas are tested, and improvements are evaluated over time using the channel's own data.",
+      "Performance data from previous uploads informs future decisions. We identify repeatable patterns, refine structural elements, and evolve pacing based on real audience behavior. The goal is not isolated improvements it’s consistent performance across uploads.",
   },
 ];
 
@@ -48,7 +48,7 @@ export function WorkflowTimelineSection() {
             Process
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            How Working Together Looks Like
+            How the Process Works
           </h2>
         </motion.div>
 

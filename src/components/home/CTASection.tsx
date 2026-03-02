@@ -93,17 +93,17 @@ export function CTASection() {
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Let's See If This Is a Fit
+              Let’s Build Predictable Performance
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8 whitespace-nowrap">
-              If you're serious about improving how your content performs long-term, let's talk.
+              If you’re serious about improving how your long-form content performs over time, we should talk.
             </p>
             <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-10 text-sm whitespace-nowrap">
-              Tell me about your channel. I'll let you know if I'm the right person to help.
+              Share your channel and goals. I’ll let you know if this is the right fit and what I’d focus on first.
             </p>
             <Link to="/contact">
               <Button variant="hero" size="lg">
-                Get Started
+                Apply to Work Together
               </Button>
             </Link>
           </div>

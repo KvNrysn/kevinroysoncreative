@@ -6,52 +6,52 @@ import { Link } from "react-router-dom";
 const portfolioItems = [
   {
     id: 1,
-    title: "Message-Focused Educational Edit",
+    title: "Brand Authority Educational Edit",
     embedUrl: "https://www.youtube.com/embed/DTDii2ZxQ0c",
     bullets: [
-      "Maintained clear pacing to support professional tone",
-      "Enhanced screen recordings with guided focus",
-      "Highlighted product value clearly and concisely",
+      "Structured delivery to sustain authority throughout long-form runtime",
+      "Engineered screen visuals to reinforce trust and expertise",
+      "Highlighted value moments to maximize perceived depth",
     ],
   },
   {
     id: 2,
-    title: "Hype-Building for Storytelling Edit",
+    title: "High-Retention Momentum Edit",
     embedUrl: "https://www.youtube.com/embed/7cWOMVxpuoc",
     bullets: [
-      "Playful and well managed sound design early for hype-building",
-      "Early proof use for trust of story value",
-      "Selected parts where A-roll should be disrupted for storytelling matched visual",
+      "Designed opening sequence to capture and stabilize early retention",
+      "Integrated proof elements at psychological inflection points",
+      "Controlled pattern interruptions to maintain sustained engagement",
     ],
   },
   {
     id: 3,
-    title: "Structured Storytelling Edit",
+    title: "Authority-Driven Narrative Edit",
     embedUrl: "https://www.youtube.com/embed/vt17rXY7wrg",
     bullets: [
-      "Refined A-roll structure for stronger storytelling",
-      "Integrated product visuals to reinforce key points",
-      "Organized clear chapters for easier viewer understanding",
+      "Rebuilt the narrative structure to eliminate weak retention valleys",
+      "Engineered visual reinforcement to anchor key authority moments",
+      "Structured chapters to control pacing and guide viewer psychology",
     ],
   },
   {
     id: 4,
-    title: "Credibility-Driven Case Study Edit",
+    title: "Conversion-Focused Case Study Edit",
     embedUrl: "https://www.youtube.com/embed/Qs4uKpEmm3o",
     bullets: [
-      "Refined intro pacing for a clear, strong message start",
-      "Added visuals to boost credibility and clarity",
-      "Enhanced screen recordings with guided focus",
+      "Structured introduction to immediately establish authority and stakes",
+      "Reinforced claims with visual proof architecture",
+      "Directed viewer focus during demonstrations to reduce friction",
     ],
   },
   {
     id: 5,
-    title: "Clear Product Explanation Edit",
+    title: "Strategic Product Positioning Edit",
     embedUrl: "https://www.youtube.com/embed/fkf5-WI_rtQ",
     bullets: [
-      "Improved screen clarity with guided focus",
-      "Adjusted pacing for easier understanding",
-      "Added subtle cues to highlight key product points",
+      "Clarified complex product mechanisms without reducing perceived value",
+      "Controlled pacing to prevent cognitive overload",
+      "Directed attention toward revenue-driving features",
     ],
   },
 ];
@@ -75,7 +75,7 @@ export default function Portfolio() {
             transition={{ delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 whitespace-nowrap"
           >
-            Editing Work Built for Clarity & Retention
+            Strategic YouTube Editing for Authority & Scalable Growth
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -83,7 +83,7 @@ export default function Portfolio() {
             transition={{ delay: 0.2 }}
             className="text-base md:text-lg text-muted-foreground max-w-4xl mx-auto whitespace-nowrap"
           >
-            Examples of long-form edits where visual decisions support how viewers actually watch.
+            Long-form YouTube systems engineered to increase retention, elevate positioning, and turn viewers into buyers.
           </motion.p>
         </div>
       </section>

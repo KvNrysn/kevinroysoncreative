@@ -16,15 +16,15 @@ export default function Home() {
   return (
     <Layout>
       <HeroSection />
-      <VSLSection />
-      <ProofSection />
       <EditorMythsSection />
       <EditingDecisionsSection />
-      <OfferSection />
-      <TestimonialsSection />
+      <VSLSection />
       <CaseStudySection />
+      <ProofSection />
+      <TestimonialsSection />
       <AboutSection />
       <NotForSection />
+      <OfferSection />
       <FAQSection />
       <CTASection />
     </Layout>

@@ -9,30 +9,30 @@ import mythMusic from "@/assets/myth-music.jpg";
 const myths = [
   {
     image: mythRetention,
-    title: "Most editors optimize for looks, not retention",
+    title: "Editors optimize for looks, not attention flow",
     detail:
-      'Visual polish can make a video feel "high quality," but it doesn\'t fix why viewers stop watching halfway through.',
+      'A video can look "high-quality" and still lose viewers early if structure, pacing, and trust aren\'t aligned.',
     span: "md:col-span-1 md:row-span-1",
   },
   {
     image: mythPacing,
-    title: "Clean cuts do not mean good pacing",
+    title: "Clean cuts don't fix structural timing",
     detail:
-      "Even with clean edits, poor pacing causes important ideas to arrive too late after viewers have already left.",
+      "If key ideas arrive too late or pacing is flat, viewers leave no matter how smooth the transition look like.",
     span: "md:col-span-1 md:row-span-1",
   },
   {
     image: mythVisuals,
-    title: "Choice of visuals determines whether viewers trust the creator",
+    title: "Visual alignment shapes perceived credibility",
     detail:
-      "Visuals that support what's being said build credibility, while random or mismatched visuals quietly break trust.",
+      "When visuals reinforce the message, trust buillds and when they distract or misalign doubt creeps in. Even subconsciously.",
     span: "md:col-span-1 md:row-span-1",
   },
   {
     image: mythMusic,
-    title: "Adding music doesn't automatically keep viewers engaged",
+    title: "Engagement isn't created by effects, it\'s created by intention",
     detail:
-      "Music supports pacing, but emotion requires music strategy and alignment with visual.",
+      "Music and motion only work when they support narrative structure and emotion rhythm.",
     span: "md:col-span-1 md:row-span-1",
   },
 ];
@@ -50,7 +50,7 @@ export function EditorMythsSection() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section className="section-padding">
+    <section id="approach" className="section-padding">
       <div className="container-main">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export function EditorMythsSection() {
             The Problem
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            Good Editing ≠ Conversion
+            Why Good Editing Still Fails
           </h2>
         </motion.div>
 

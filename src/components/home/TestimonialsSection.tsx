@@ -13,22 +13,22 @@ const testimonials = [
     image: testimonialTomlet,
     name: "Tech Tomlet",
     context:
-      "Shared after the client felt comfortable handing off editing and focusing on other priorities",
+      "Shared after transitioning to full editorial ownership and removing daily oversight",
   },
   {
     image: testimonialRichard,
     name: "Richard Strittmatter",
-    context: "Feedback after handling sponsored video",
+    context: "Sponsor approval following structural sponsor segment redesign",
   },
   {
     image: testimonialRitesh,
     name: "Ritesh Verma",
-    context: "Feedback in Frame.io on first draft",
+    context: "First-draft feedback during structured review cycle",
   },
   {
     image: testimonialAlfred,
     name: "Alfred Simon",
-    context: "Well done start with good viewer's impression",
+    context: "Early performance feedback after launch of revised structure",
   },
 ];
 
@@ -57,7 +57,7 @@ export function TestimonialsSection() {
             Testimonials
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            What Clients Say
+            What It's Like Working Together
           </h2>
         </motion.div>
 

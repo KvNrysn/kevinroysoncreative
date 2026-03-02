@@ -9,27 +9,31 @@ import {
 const faqItems = [
   {
     q: "What's included in a one-off edit?",
-    a: "A complete long-form edit focused on structure, pacing, and clarity. This includes visual reinforcement and polish needed for a professional final delivery.",
+    a: "A complete long-form edit built around structure, pacing, and message clarity. This includes intentional visual reinforcement and the level of polish required for professional delivery. The focus is execution and alignment not just aesthetic upgrades.",
   },
   {
-    q: "How do retainers work?",
-    a: "Retainers are customized based on volume and cadence. They're designed for creators who want consistent output and a stable editing workflow alongside actual result data",
+    q: " How does the retainer structure work month-to-month?",
+    a: "Retainers are structured around a defined monthly volume and publishing cadence. Each cycle includes execution, performance review, and structural refinement based on patterns across uploads not single-video results. The goal is consistent output and measurable improvement over time.",
   },
   {
     q: "How many revisions are included?",
-    a: "Revisions are handled collaboratively and reasonably. Most projects don't require many once direction is clear.",
+    a: "Revisions are handled collaboratively and with clear direction. Once alignment is established, most projects require minimal adjustments. The focus is meaningful improvements to clarity and structure not endless micro-edits.",
   },
   {
-    q: "What do you need from me to get started?",
-    a: "Raw footage, references (if any), real asset(if any), and the goal of the video. Everything else is handled through the editing process.",
+    q: "What do you need from me before starting?",
+    a: "Raw footage, the objective of the video, and any relevant references or assets. We begin with a short alignment phase to clarify goals, audience, and positioning. From there, the editing process follows a structured workflow.",
   },
   {
-    q: "What platforms do you edit for?",
-    a: "Primarily YouTube long-form, with content optimized for clarity and retention on that platform.",
+    q: "How is performance measured during retainers?",
+    a: "Performance is evaluated against the primary metric defined at the start whether that’s retention, average view duration, conversions, subscriber growth, or overall channel momentum. Each month, we review how those metrics moved, identify what caused improvements or declines, and adjust structure accordingly. Decisions are based on recurring patterns across uploads not isolated spikes.",
+  },
+  {
+    q: "Can I move from a one-off into a retainer later?",
+    a: "Yes and it’s often recommended. Starting with a one-off allows us to test workflow alignment and creative direction. Once that foundation is clear, transitioning into a retainer enables performance to be evaluated properly across multiple uploads.",
   },
   {
     q: "Do you offer growth audits separately?",
-    a: "Yes. Growth audits are available for creators who want clarity on what to improve before committing to ongoing editing. Retainers gets a monthly growth audit meeting/recording depends on preference.",
+    a: "Yes. Growth audits are available as a standalone diagnostic for creators who want clarity before committing to ongoing editing. Retainer clients receive ongoing performance reviews as part of the collaboration.",
   },
 ];
 

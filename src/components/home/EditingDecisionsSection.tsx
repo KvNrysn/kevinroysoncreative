@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 
 const pillars = [
   {
-    title: "Make the Value Clear Early",
+    title: "Clarify the Value Before Attention Drops",
     detail:
-      "I focus on giving signal why the message of the video matters early, so viewers understand the value of continuing before dropping off.",
+      "If viewers don\'t understand why the video matters within the first moments, they leave. Structure determines whether they stay long enough to care.",
     height: "h-[340px] md:h-[400px]",
     hoverHeight: "h-[370px] md:h-[440px]",
   },
   {
-    title: "Build Trust Through Visual Alignment",
+    title: "Align Visuals With Message to Build Credibility",
     detail:
-      "I use visuals and pacing to support what the creator is saying, helping viewers trust the message instead of questioning it.",
+      "When visuals reinforcce what\'s being said, trust builds naturally. When they distract or misalign, viewers hesitate even if they can\'t explain why.",
     height: "h-[280px] md:h-[340px]",
     hoverHeight: "h-[310px] md:h-[380px]",
   },
   {
-    title: "Maintain Mental Engagement Throughout",
+    title: "Sustain Attention Through Structural Momentum",
     detail:
-      "I manage pacing, structure, and visual changes that keep viewers mentally attached and ready to absorb each point.",
+      "Retention isn\'t created by fast cuts. It\'s created by progression where each section earns the next and keeps viewers mentally invested.",
     height: "h-[220px] md:h-[280px]",
     hoverHeight: "h-[250px] md:h-[320px]",
   },

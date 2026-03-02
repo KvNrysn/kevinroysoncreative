@@ -8,28 +8,32 @@ import {
 
 const faqItems = [
   {
-    q: "How long does a typical edit take?",
-    a: "Turnaround depends on video length and complexity, but most long-form edits are delivered within a few days once everything is aligned. Retainers clients of course get a faster turnaround due to scheduling priority.",
+    q: "How long does a typical long-form edit take?",
+    a: "Turnaround depends on length and complexity, but most projects are delivered within 3–5 days once assets are aligned. Retainer clients receive scheduling priority and more consistent turnaround.",
   },
   {
     q: "Do I work directly with you?",
-    a: "Yes. You'll be working directly with me on editing decisions, feedback, and direction.",
+    a: "Yes. You work directly with me on structure, pacing decisions, and creative direction. No middle layers. No outsourcing surprises.",
   },
   {
-    q: "Is this one-off or ongoing?",
-    a: "Both. Many creators start with a one-off edit to see workflow fit first and then move to retainers for actual result.",
+    q: "How do you approach retention and performance?",
+    a: "I don’t approach editing as just \“making it look good.\”Each video is structured around attention flow, clarity, and reinforcement of key moments. I look at pacing shifts, visual resets, and message anchoring not just cuts and animations. Over time, we refine patterns based on what your audience consistently responds to.",
   },
   {
-    q: "What kind of creators is this best for?",
-    a: "This works best for business-focused creators who care about clarity, retention, and long-term audience trust. Not quick viral edits.",
+    q: "Is this a good fit for early-stage creators?",
+    a: "Yes if you’re serious about building long-term authority. This works best for creators who see content as a business asset, not a viral experiment. If you're committed to improving structure and consistency early, the growth compounds faster. If you’re looking for quick viral tricks, this isn’t the right fit.",
   },
   {
-    q: "Do you handle thumbnails as well?",
-    a: "I work with another thumbnail designer to give thumbnail(backed with data for retainer clients) for every project, but the core focus is always the video itself.",
+    q: "What does the ongoing partnership actually include?",
+    a: "The retainer isn’t just “more edits.”It includes: Structured long-form edits, Consistent pacing framework, Thumbnail collaboration, Creative performance feedback, Priority scheduling, Ongoing structural refinement across uploads. The goal is not one good video it’s predictable performance over time.",
   },
   {
-    q: "Is this guaranteed to increase views or retention?",
-    a: "No guarantees. Editing supports performance, but results also depend on the idea, delivery, and audience. My role is to make the content as clear and watchable as possible. Editing result may only be judged after working with retainers, it cannot be judged working only with a one-off project.",
+    q: "Do you guarantee performance results?",
+    a: "No guarantees because performance depends on the idea, positioning, and audience. My role is to maximize clarity, retention, and structural strength. Results compound over multiple uploads, which is why performance is best evaluated through ongoing work rather than a single video.",
+  },
+  {
+    q: "How many ongoing clients do you take on?",
+    a: "I keep a limited number of ongoing partnerships to maintain quality and direct involvement. Once capacity is full, new retainers open only when a slot becomes available.",
   },
 ];
 

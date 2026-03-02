@@ -26,7 +26,7 @@ export default function Services() {
             transition={{ delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 whitespace-nowrap"
           >
-            Editing built for retention, trust, and long-term growth
+            Editing Built for Predictable Growth
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -34,7 +34,7 @@ export default function Services() {
             transition={{ delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            I work with business-focused creators who want their videos to hold attention, communicate clearly, and support real channel outcomes. Not just look polished.
+            For business-focused creators who want stronger retention, clearer messaging, and performance that compounds. Not fluctuate.
           </motion.p>
         </div>
       </section>
@@ -61,13 +61,13 @@ export default function Services() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Ready to see if this is a fit?
+              Build a Long-Term Editing System, Not Just Another Video
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-              If you care about retention, clarity, and building content that compounds. Let's talk through your channel and see what makes sense.
+              If you're serious about improving retention, clarity, and measurable channel growth, let's review your current content and decide the right next step. One-off or retainer.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">Start a Conversation</Link>
+              <Link to="/contact">Book a Fit Call</Link>
             </Button>
           </motion.div>
         </div>

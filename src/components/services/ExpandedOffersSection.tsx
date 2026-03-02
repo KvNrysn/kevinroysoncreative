@@ -26,28 +26,28 @@ const offers: OfferDetail[] = [
       {
         heading: "What this is for",
         content:
-          "Designed for creators who want to test workflow, alignment, and editing direction before committing to a monthly retainer.",
+          "For creators who want to test alignment before committing to a long-term partnership. This validates workflow, direction, and creative fit.",
       },
       {
         heading: "How it's approached",
         content:
-          "Editing decisions prioritize retention and message clarity. Focusing on structure, pacing shifts, and visual support rather than surface-level polish.",
+          "Editing decisions are driven by retention and clarity — not just polish. We focus on structure, pacing shifts, and reinforcing key moments so the message lands and holds attention.",
       },
       {
         heading: "What to expect after",
         content:
-          "You'll receive a cleaner, more intentional long-form video and a clear understanding of how the workflow and editing approach fit your content. This phase is about alignment, not immediate performance changes.",
+          "You’ll walk away with a stronger, more intentional long-form video and a clear sense of how the process fits your channel. This stage is about alignment, not long-term optimization.",
       },
       {
         heading: "When this makes sense",
         content:
-          "If you want to validate fit, quality, and process before scaling output through a retainer.",
+          "If you want to evaluate quality and collaboration before scaling into a retainer.",
       },
     ],
     bullets: [
       "Full long-form edit",
-      "Clarity-focused structure and pacing decisions",
-      "Retention-aware editing choices",
+      "Structure and pacing optimization",
+      "Retention-aware editing decisions",
       "Clear delivery timeline",
       "YouTube Thumbnail",
     ],
@@ -62,31 +62,31 @@ const offers: OfferDetail[] = [
       {
         heading: "What this is for",
         content:
-          "This is for creators who are ready to commit to long-term improvement and judge performance based on patterns alongside data, not single uploads.",
+          "For creators ready to build predictable performance not judge results by single uploads. This is for channels committed to long-term structural improvement and data-informed iteration.",
       },
       {
         heading: "How it's approached",
         content:
-          "Editing decisions are informed by ongoing performance data, audience behavior, and feedback loops. Each month, we review what's working, test new structural and pacing adjustments, and refine execution based on real viewer response.",
+          "Editing decisions are guided by ongoing performance signals, audience behavior, and pattern tracking. Each month, we review what’s working, identify drop-off points, test structural and pacing refinements, and evolve the format intentionally not randomly. This is optimization through repetition, not guesswork.",
       },
       {
         heading: "What to expect over time",
         content:
-          "You'll gain consistency in output, clearer creative direction, and measurable insight into what your audience rewards. Improvements are evaluated across multiple uploads, allowing informed iteration instead of one-off guesses.",
+          "You gain consistency in output, clearer creative direction, and measurable insight into what your audience actually rewards. Performance is evaluated across multiple uploads, allowing informed adjustments instead of reactive changes. Over time, the channel becomes more stable not just occasionally successful.",
       },
       {
         heading: "When this makes sense",
         content:
-          "If you want to improve retention, clarity, and channel performance through repeatable testing and long-term collaboration. Not isolated edits.",
+          "If you want to improve retention, clarity, and overall channel performance through repeatable testing and structured collaboration. Not isolated edits. Not one-off experiments.",
       },
     ],
     bullets: [
-      "Everything in One-off",
-      "Scheduling priority",
-      "Faster delivery",
-      "Weekly video performance analysis (creative related)",
-      "Monthly performance & planning meeting",
-      "Frame.io access and workflow",
+      "Everything in the One-off package",
+      "Priority scheduling",
+      "Faster turnaround",
+      "Ongoing retention & performance review (creative-focused)",
+      "Monthly performance and planning session",
+      "Structured workflow via Frame.io",
     ],
   },
   {
@@ -98,29 +98,29 @@ const offers: OfferDetail[] = [
       {
         heading: "What this is for",
         content:
-          "This is an early diagnosis for creators who want clarity on what to fix before investing time or money into full production changes.",
+          "For creators who want clarity before committing to production changes. This is a structural diagnosis not an edit. It identifies where performance is leaking and what’s worth fixing first.",
       },
       {
         heading: "How it's approached",
         content:
-          "The video is reviewed from a creative and structural standpoint. Focusing on retention drops, pacing issues, trust signals, and message clarity relative to your goal (sponsors, conversions, or audience growth). The audit looks for leverage points, not surface-level polish.",
+          "The video is reviewed from a retention, clarity, and conversion standpoint. We analyze attention drop-offs, pacing rhythm, message anchoring, and structural friction relative to your channel’s goals (audience growth, authority, sponsor performance). The focus is leverage points, not surface polish.",
       },
       {
         heading: "What you'll get",
         content:
-          "You'll receive a clear breakdown of what's holding the video back, why it matters, and which changes are most likely to improve performance if implemented consistently. This is insight, not execution.",
+          "You receive a structured breakdown covering: What’s holding performance back, Why it matters, Which changes would likely create the highest impact, How to approach implementation strategically. This is insight and direction not execution.",
       },
       {
         heading: "When this makes sense",
         content:
-          "If you want direction before editing, testing, or committing to a one-off or retainer workflow.",
+          "If you want to make informed decisions before investing in a one-off edit or retainer. Or if you want objective clarity on what’s limiting your current content performance.",
       },
     ],
     bullets: [
-      "Retention + trust factor analysis",
-      "Pacing improvement recommendations",
-      "Conversion-focused plan",
-      "30–60 sec mini re-edit + breakdown",
+      "Retention & trust-factor analysis",
+      "Pacing and structure improvement recommendations",
+      "Conversion and clarity alignment suggestions",
+      "30–60 second mini re-edit demonstration with breakdown",
     ],
   },
 ];
@@ -139,7 +139,7 @@ export function ExpandedOffersSection() {
             Services
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            What Each Offer Includes
+            What You’re Actually Getting
           </h2>
         </motion.div>
 

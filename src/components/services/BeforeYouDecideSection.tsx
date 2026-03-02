@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { MinusCircle, ArrowRight } from "lucide-react";
 
 const disqualifiers = [
-  "Purely flashy edits without attention to structure or message clarity",
-  "An editor who executes instructions without discussing what improves retention",
-  "Short-term viral wins instead of consistent content improvement",
-  "The lowest-cost option rather than a long-term partner",
+  "Fast, flashy edits without structural thinking",
+  "An editor who executes without challenging what improves retention",
+  "Short-term viral spikes over consistent audience growth",
+  "The lowest-cost option instead of a long-term partner",
 ];
 
 const stagger = {
@@ -31,11 +31,10 @@ export function BeforeYouDecideSection() {
             Fit Check
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Before You Decide
+            Before You Commit
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            This approach works best for creators who care about clarity, retention, and long-term
-            results. It may not be a fit if you're looking for:
+            This approach works best for creators focused on clarity, retention, and long-term channel performance
           </p>
         </motion.div>
 
@@ -71,8 +70,7 @@ export function BeforeYouDecideSection() {
         >
           <ArrowRight size={16} className="text-primary shrink-0" />
           <p className="text-foreground font-medium leading-relaxed">
-            My focus is building content systems that viewers trust — and that creators can rely on
-            over time.
+            My focus is building content systems that audiences trust and that scale without losing consistency
           </p>
         </motion.div>
       </div>

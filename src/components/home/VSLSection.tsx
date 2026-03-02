@@ -11,9 +11,9 @@ export function VSLSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            How Trust and Retention Drive
+            Why Retention and Trust
             <br />
-            <span className="text-muted-foreground">Conversion in Long-Form Content</span>
+            <span className="text-muted-foreground">Decide Whether a Video Converts</span>
           </h2>
         </motion.div>
 

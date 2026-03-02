@@ -5,21 +5,19 @@ const textLines = [
   {
     content: (
       <>
-        I'm <span className="font-semibold text-primary">Kevin</span>. I work with
-        business-focused creators who use long-form YouTube content to build trust,
-        authority, and revenue for their business.
+        I'm <span className="font-semibold text-primary">Kevin</span>. I work with business-focused creators who use long-form YouTube as a growth engine not just a content channel.
       </>
     ),
     className: "text-lg text-foreground leading-relaxed",
   },
   {
     content:
-      "My editing focuses on trust, pacing, and retention so the message lands and viewers stay engaged long enough to act.",
+      "My role isn’t just to \"edit.\" It’s to structure videos so attention holds, trust compounds, and sponsor integrations feel intentional rather than inserted.",
     className: "text-muted-foreground leading-relaxed",
   },
   {
     content:
-      "You work directly with me throughout the process, with a focus on consistency, clear communication, and results-driven execution.",
+      "You work directly with me. No layers. No handoffs. Just clear communication and structured execution.",
     className: "text-muted-foreground leading-relaxed",
   },
 ];

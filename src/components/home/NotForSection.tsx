@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { X } from "lucide-react";
 
 const notForItems = [
-  "Fast, flashy edits with no regard for structure or clarity",
-  "Someone to blindly follow instructions without questioning what helps retention",
-  "One-off viral tricks instead of long-term content improvement",
-  "The cheapest option available",
+  "High-energy edits that prioritize flash over clarity",
+  "An editor who executes instructions without challenging structure",
+  "One-off “viral” tactics instead of long-term performance stability",
+  "The lowest-cost option available",
 ];
 
 export function NotForSection() {
@@ -57,8 +57,7 @@ export function NotForSection() {
               transition={{ delay: 0.5 }}
               className="mt-8 text-sm text-muted-foreground text-center border-t border-border pt-6"
             >
-              I work best with creators who care about message, pacing, and
-              building trust over time.
+              I work best with creators who treat YouTube as a long-term business asset and care about consistent growth.
             </motion.p>
           </div>
         </motion.div>

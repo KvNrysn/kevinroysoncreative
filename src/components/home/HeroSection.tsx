@@ -42,9 +42,9 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-3xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-bold text-foreground mb-6 leading-tight whitespace-nowrap"
         >
-          YouTube Editing for Business Creators
+          Most YouTube videos look fine
           <br />
-          <span className="text-muted-foreground">Who Care About Trust + Retention</span>
+          <span className="text-muted-foreground">Few are structured to hold attention</span>
         </motion.h1>
 
         <motion.p
@@ -53,8 +53,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
         >
-          I help business-focused creators turn videos into clear and trustworthy,
-          retention-driven content that keeps viewers watching and drives action.
+          I work with business-focused creators to strengthen clarity, pacing, and retention so the message lands and drives action
         </motion.p>
 
         <motion.div
@@ -63,11 +62,11 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex justify-center"
         >
-          <Link to="/portfolio">
+          <a href="#approach">
             <Button variant="heroOutline" size="lg">
-              View Portfolio
+              Explore the Approach
             </Button>
-          </Link>
+          </a>
         </motion.div>
       </div>
 
