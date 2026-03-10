@@ -147,14 +147,14 @@ export function OfferSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex justify-center mt-12"
+          className="text-center mt-12"
         >
           <Link to="/contact">
             <Button variant="hero" size="lg">
               Reach Out to Get Started
             </Button>
           </Link>
-          <p className="mt-4 text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground/60 mt-4">
             Need something customized? Feel free to request a tailored solution.
           </p>
         </motion.div>
