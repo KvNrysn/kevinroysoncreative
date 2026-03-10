@@ -5,51 +5,37 @@ import { Check } from "lucide-react";
 
 const offers = [
   {
-    title: "Growth Audit",
-    price: "$199",
-    unit: "/audit",
-    clarify:
-      "Strategic breakdown to identify structural gaps before scaling",
-    bullets: [
-      "Retention & trust pattern analysis",
-      "Structural pacing review",
-      "Conversion/sponsor segment evaluation plan",
-      "Clear improvement roadmap",
-      "30–60 sec structural re-edit example + breakdown",
-    ],
-    featured: false,
-  },
-  {
-    title: "One-off Long-Form Video",
+    title: "Test Project",
     price: "$499",
     unit: "/video",
-    clarify: "Best for testing workflow before moving into ongoing partnership",
+    clarify:
+      "Test for workflow before going to retainers",
     bullets: [
-      "Full long-form structural edit",
-      "Clarity-driven pacing decisions",
-      "Retention-aware visual sequencing",
-      "Defined delivery timeline",
-      "Strategic YouTube thumbnail",
+      "Full long-form edit",
+      "Clarity-focused structure and pacing decisions",
+      "Retention-aware editing choices",
+      "Clear delivery timeline",
+      "Strategic edit based on your content style",
+      "YouTube Thumbnail",
     ],
-    featured: true,
+    featured: false,
   },
   {
     title: "Retainer Long-Form Video",
-    price: "$1.99k",
+    price: "$1.9k",
     unit: "/mo",
-    clarify: "Built for consistent publishing and sponsor-backed growth",
+    clarify: "See actual channel performance change",
     bullets: [
-      "Everything included in One-off",
-      "Prioriy scheduling & turnaround",
-      "Structured editing framework across uploads",
+      "Up to 5 long-form videos per month",
+      "Consistent editing structure across uploads",
+      "Retention-focused pacing and viewer flow",
+      "Priority scheduling and reliable turnaround",
       "Ongoing creative-side performance review",
-      "Monthly planning & alignment call",
-      "Frame.io workflow & project tracking",
+      "Monthly strategy & planning call/Loom",
     ],
-    featured: false,
+    featured: true,
   },
 ];
-
 const stagger = {
   animate: { transition: { staggerChildren: 0.12 } },
 };
@@ -82,7 +68,7 @@ export function OfferSection() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-6 items-end max-w-5xl mx-auto"
+          className="grid md:grid-cols-2 gap-6 items-end max-w-3xl mx-auto"
         >
           {offers.map((offer, i) => (
             <motion.div
@@ -115,7 +101,7 @@ export function OfferSection() {
                 {/* Badge for featured */}
                 {offer.featured && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold">
-                    Starter
+                    Recommended
                   </span>
                 )}
 
@@ -156,18 +142,18 @@ export function OfferSection() {
           ))}
         </motion.div>
 
-        {/* CTA Section */}
+        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center mt-12 text-center"
+          className="flex justify-center mt-12"
         >
-        <Link to="/contact">
-          <Button variant="hero" size="lg">
-            Reach Out to Get Started
-          </Button>
-        </Link>
+          <Link to="/contact">
+            <Button variant="hero" size="lg">
+              Reach Out to Get Started
+            </Button>
+          </Link>
           <p className="mt-4 text-sm text-muted-foreground">
             Need something customized? Feel free to request a tailored solution.
           </p>
