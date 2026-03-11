@@ -7,14 +7,18 @@ const proofVideos = [
   {
     embedUrl: "https://www.youtube.com/embed/4a_c8DX-KuU",
     channel: "Jason West",
-    context:
-      "Edited with clear visual guidance, deliberate attention resets, and consistent structural sequencing aligned with the channel's audience behavior.",
+    subscribers: "700k+ subscribers",
+    niche: "AI tools & developer workflows",
+    description:
+      "Long-form walkthrough structured for clarity and consistent branding across sponsored AI tool reviews. Visual attention resets and product-focused framing used to highlight key features while maintaining viewer flow through screen-recorded segments.",
   },
   {
     embedUrl: "https://www.youtube.com/embed/Y_n8xGRJq1s",
     channel: "Ritesh Verma",
-    context:
-      "Structured with deliberate pacing control, visual emphasis, and guided framing to reinforce key narrative moments.",
+    subscribers: "58K+ subscribers",
+    niche: "AI business & automation",
+    description:
+      "Long-form narrative structured to reinforce key proof moments and guide viewers through step-by-step AI business breakdown. Deliberate pacing and visual emphasis used to strengthen credibility and maintain engagement leading into the mentorship CTA.",
   },
 ];
 
@@ -39,9 +43,9 @@ export function ProofSection() {
             Proof of Work
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-            Long-Form Work
+            Long-Form Videos That Performed
             <br />
-            <span className="text-muted-foreground">Structured for Performance</span>
+            <span className="text-muted-foreground">Above Channel Average</span>
           </h2>
         </motion.div>
 
@@ -82,8 +86,9 @@ export function ProofSection() {
                       />
                     </div>
                     <div className="mt-4 text-center">
-                      <p className="text-lg font-semibold text-foreground mb-1">{v.channel}</p>
-                      <p className="text-sm text-muted-foreground max-w-lg mx-auto">{v.context}</p>
+                      <p className="text-lg font-semibold text-foreground">{v.channel} <span className="text-sm font-normal text-muted-foreground">— {v.subscribers}</span></p>
+                      <p className="text-xs text-muted-foreground/60 uppercase tracking-wider mt-0.5 mb-2">{v.niche}</p>
+                      <p className="text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed">{v.description}</p>
                     </div>
                   </div>
                 ))}
