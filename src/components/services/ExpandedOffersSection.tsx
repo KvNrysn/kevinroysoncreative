@@ -16,7 +16,7 @@ interface OfferDetail {
 
 const offers: OfferDetail[] = [
   {
-    title: "One-off Long-Form Video",
+    title: "Test Project",
     featured: true,
     images: [
       { src: oneOffBefore, alt: "Simple Premiere Pro timeline before editing", label: "Before" },
@@ -88,41 +88,7 @@ const offers: OfferDetail[] = [
       "Monthly performance and planning session",
       "Structured workflow via Frame.io",
     ],
-  },
-  {
-    title: "Growth Audit",
-    images: [
-      { src: growthAudit, alt: "Video performance analysis with annotations on retention graph" },
-    ],
-    sections: [
-      {
-        heading: "What this is for",
-        content:
-          "For creators who want clarity before committing to production changes. This is a structural diagnosis not an edit. It identifies where performance is leaking and what’s worth fixing first.",
-      },
-      {
-        heading: "How it's approached",
-        content:
-          "The video is reviewed from a retention, clarity, and conversion standpoint. We analyze attention drop-offs, pacing rhythm, message anchoring, and structural friction relative to your channel’s goals (audience growth, authority, sponsor performance). The focus is leverage points, not surface polish.",
-      },
-      {
-        heading: "What you'll get",
-        content:
-          "You receive a structured breakdown covering: What’s holding performance back, Why it matters, Which changes would likely create the highest impact, How to approach implementation strategically. This is insight and direction not execution.",
-      },
-      {
-        heading: "When this makes sense",
-        content:
-          "If you want to make informed decisions before investing in a one-off edit or retainer. Or if you want objective clarity on what’s limiting your current content performance.",
-      },
-    ],
-    bullets: [
-      "Retention & trust-factor analysis",
-      "Pacing and structure improvement recommendations",
-      "Conversion and clarity alignment suggestions",
-      "30–60 second mini re-edit demonstration with breakdown",
-    ],
-  },
+  }
 ];
 
 export function ExpandedOffersSection() {
