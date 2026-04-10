@@ -17,7 +17,7 @@ const portfolioItems = [
   {
     id: 2,
     title: "High-Retention Momentum Edit",
-    embedUrl: "https://www.youtube.com/embed/7cWOMVxpuoc",
+    embedUrl: "https://www.youtube.com/embed/gz06uiZZOq4",
     bullets: [
       "Designed opening sequence to capture and stabilize early retention",
       "Integrated proof elements at psychological inflection points",
@@ -47,7 +47,7 @@ const portfolioItems = [
   {
     id: 5,
     title: "Strategic Product Positioning Edit",
-    embedUrl: "https://www.youtube.com/embed/fkf5-WI_rtQ",
+    embedUrl: "https://www.youtube.com/embed/v57yYbbaBqg",
     bullets: [
       "Clarified complex product mechanisms without reducing perceived value",
       "Controlled pacing to prevent cognitive overload",
