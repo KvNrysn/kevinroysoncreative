@@ -1,130 +1,123 @@
-import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
-import logo from "@/assets/logo.jpg";
-
-const footerLinks = {
-  navigation: [
-    { name: "Home", path: "/" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
-  ],
-  services: [
-    { name: "Growth Audit", path: "/services" },
-    { name: "One-off", path: "/services" },
-    { name: "Retainer", path: "/services" },
-  ],
-  legal: [
-     { name: "Privacy Policy", path: "/privacy" },
-     { name: "Terms of Service", path: "/terms" },
-  ],
-};
-
-const socialLinks = [
-  { icon: Linkedin, href: "https://www.linkedin.com/in/kevin-royson", label: "LinkedIn" },
-  { icon: Twitter, href: "https://x.com/KR_Creative511", label: "Twitter" },
-];
+"use client";
+import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="container-main section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {/* Brand */}
-          <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="KevinRoysonCreative" className="w-8 h-8 rounded-lg object-cover" />
-              <span className="font-semibold text-lg text-foreground">KevinRoysonCreative</span>
-            </Link>
-            <p className="text-muted-foreground text-sm mb-6">
-              Strategic YouTube editing engineered to increase retention, authority, and long-term growth.
-            </p>
-            <div className="flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
-                >
-                  <social.icon size={18} />
-                </a>
-              ))}
+    <footer style={{
+      borderTop: "1px solid var(--line)",
+      padding: "48px 0 32px",
+      background: "var(--bg1)",
+    }}>
+      <div className="wrap">
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "1fr auto 1fr",
+          alignItems: "center",
+          gap: 24,
+        }} className="f-inner-grid">
+          <Link href="/" style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 10,
+            fontWeight: 700,
+            fontSize: 15,
+            letterSpacing: "-0.01em",
+            color: "var(--fg)",
+          }}>
+            <div style={{
+              width: 30,
+              height: 30,
+              borderRadius: 6,
+              overflow: "hidden",
+              border: "1px solid var(--line2)",
+              flexShrink: 0,
+            }}>
+              <img src="/logo.jpg" alt="logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
-          </div>
+            KevinRoysonCreative
+          </Link>
 
-          {/* Navigation */}
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Navigation</h4>
-            <ul className="space-y-3">
-              {footerLinks.navigation.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Services</h4>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-center gap-3 text-muted-foreground text-sm">
-                <Mail size={16} />
-                <span>kevinrysn@kevinroysoncreative.com</span>
-              </li>
-              <li className="flex items-center gap-3 text-muted-foreground text-sm">
-                <Phone size={16} />
-                <span>+62 822-9859-9971</span>
-              </li>
-              <li className="flex items-center gap-3 text-muted-foreground text-sm">
-                <MapPin size={16} />
-                <span>Jakarta, Indonesia</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">
-            ©2026 KevinRoysonCreative. All rights reserved.
-          </p>
-          <div className="flex gap-6">
-            {footerLinks.legal.map((link) => (
-              <Link
-                key={link.name}
-                to={link.path}
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+          <div style={{ display: "flex", gap: 24, flexWrap: "wrap", justifyContent: "center" }}>
+            {[
+              { href: "/", label: "Home" },
+              { href: "/portfolio", label: "Portfolio" },
+              { href: "/contact", label: "Contact" },
+            ].map(({ href, label }) => (
+              <Link key={href} href={href} style={{ color: "var(--fg-mute)", fontSize: 14, transition: "color .2s" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "var(--fg)")}
+                onMouseLeave={e => (e.currentTarget.style.color = "var(--fg-mute)")}
               >
-                {link.name}
+                {label}
               </Link>
             ))}
           </div>
+
+          <div style={{ display: "flex", alignItems: "center", gap: 12, justifyContent: "flex-end", flexWrap: "wrap" }}>
+            <a href="mailto:kevinrysn@kevinroysoncreative.com" style={{ color: "var(--fg-mute)", fontSize: 13, transition: "color .2s" }}
+              onMouseEnter={e => (e.currentTarget.style.color = "var(--fg)")}
+              onMouseLeave={e => (e.currentTarget.style.color = "var(--fg-mute)")}
+            >
+              kevinrysn@kevinroysoncreative.com
+            </a>
+            <a href="https://x.com/KR_Creative511" title="X" target="_blank" rel="noopener noreferrer" style={{
+              width: 34, height: 34, borderRadius: 4,
+              border: "1px solid var(--line)",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              color: "var(--fg-mute)", fontSize: 13, transition: "all .2s",
+            }}
+              onMouseEnter={e => { e.currentTarget.style.color = "var(--y)"; e.currentTarget.style.borderColor = "rgba(245,213,24,.3)"; }}
+              onMouseLeave={e => { e.currentTarget.style.color = "var(--fg-mute)"; e.currentTarget.style.borderColor = "var(--line)"; }}
+            >
+              <i className="fa-brands fa-x-twitter" />
+            </a>
+          </div>
+        </div>
+
+        <div style={{
+          display: "flex",
+          gap: 24,
+          justifyContent: "center",
+          flexWrap: "wrap",
+          marginTop: 20,
+          paddingTop: 20,
+          borderTop: "1px solid var(--line)",
+        }}>
+          <Link href="/terms" style={{ color: "var(--fg-mute)", fontSize: 12, transition: "color .2s" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--fg)")}
+            onMouseLeave={e => (e.currentTarget.style.color = "var(--fg-mute)")}
+          >
+            Terms of Service
+          </Link>
+          <Link href="/privacy" style={{ color: "var(--fg-mute)", fontSize: 12, transition: "color .2s" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--fg)")}
+            onMouseLeave={e => (e.currentTarget.style.color = "var(--fg-mute)")}
+          >
+            Privacy Policy
+          </Link>
+        </div>
+
+        <div style={{
+          marginTop: 40,
+          paddingTop: 24,
+          borderTop: "1px solid var(--line)",
+          textAlign: "center",
+          fontSize: 13,
+          color: "var(--fg-mute)",
+        }}>
+          ©2026 KevinRoysonCreative. All rights reserved.
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .f-inner-grid {
+            grid-template-columns: 1fr !important;
+            text-align: center;
+            justify-items: center;
+            gap: 20px !important;
+          }
+        }
+      `}</style>
     </footer>
   );
 }

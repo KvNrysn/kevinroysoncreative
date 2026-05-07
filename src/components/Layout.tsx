@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+"use client";
+import { ReactNode, useEffect, useRef } from "react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 
@@ -7,17 +8,25 @@ interface LayoutProps {
 }
 
 export function Layout({ children }: LayoutProps) {
+  const glowRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (glowRef.current) {
+        glowRef.current.style.left = e.clientX + "px";
+        glowRef.current.style.top = e.clientY + "px";
+      }
+    };
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => document.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
-    <div className="min-h-screen flex flex-col">
+    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      <div id="glow" ref={glowRef} />
       <Navbar />
-      <main className="flex-1 pt-16 md:pt-20 page-background relative overflow-hidden">
-        {/* Blue orb effects for connected background */}
-        <div className="orb orb-blue-1" />
-        <div className="orb orb-blue-2" />
-        <div className="orb orb-blue-3" />
-        <div className="relative z-10">
-          {children}
-        </div>
+      <main style={{ flex: 1 }}>
+        {children}
       </main>
       <Footer />
     </div>
