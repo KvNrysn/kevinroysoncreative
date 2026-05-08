@@ -3,11 +3,11 @@ import { Providers } from "@/components/Providers";
 import "@/index.css";
 
 export const metadata: Metadata = {
-  title: "KevinRoysonCreative — Content Operations Partner",
+  title: "KevinRoysonCreative",
   description: "Strategic content operations for founder-led YouTube creators. Editing, thumbnails, topic research, and monthly strategy — handled.",
   authors: [{ name: "KevinRoysonCreative" }],
   openGraph: {
-    title: "KevinRoysonCreative — Content Operations Partner",
+    title: "KevinRoysonCreative",
     description: "Strategic content operations for founder-led YouTube creators.",
     type: "website",
   },
