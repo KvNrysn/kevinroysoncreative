@@ -385,7 +385,7 @@ export default function Home() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20, marginTop: 60 }} className="offer-cols-grid">
             {[
               { num: "01", title: "Time Back", body: "Up to 5 videos a month. Edited, thumbnailed, ready to post. You send the footage. You get a finished content. That's it." },
-              { num: "02", title: "Eyes On Your Channel", body: "Once a month we go through your data together. What worked, what didn't, and what we're doing next. You always know exactly where your channel stands." },
+              { num: "02", title: "Eyes On Your Channel", body: "Outside of our internal review for every upload, once a month we go through your data together. What worked, what didn't, and what we're doing next. You always know exactly where your channel stands." },
               { num: "03", title: "One Person Who Gets It", body: "You work directly with me on strategy and direction. My team handles delivery. No briefing five different people. No chasing updates. One relationship that actually holds context." },
             ].map((card, i) => (
               <div key={i} className={`r r-d${i + 1}`} style={{
@@ -818,9 +818,9 @@ export default function Home() {
                 </div>
                 <h3 style={{ fontSize: 20, marginBottom: 12 }}>Custom Partnership</h3>
                 <div style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".08em", marginBottom: 8 }}>Custom pricing</div>
-                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16, marginTop: 24 }}>For founders whose needs don't fit a standard scope — more volume, additional services, or a leaner focused engagement.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16, marginTop: 24 }}>For founders whose needs don't fit a standard scope - more volume, additional services, or a leaner focused engagement.</p>
                 <ul style={{ listStyle: "none", margin: "24px 0", padding: "24px 0", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", display: "flex", flexDirection: "column", gap: 12 }}>
-                  {["Higher volume", "Additional services", "Deeper strategic relationship", "Priority access"].map((item, i) => (
+                  {["volume change", "service scope change"].map((item, i) => (
                     <li key={i} style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 15, color: "var(--fg-dim)", padding: "8px 10px", borderRadius: 3, transition: "all .2s", cursor: "default" }}
                       onMouseEnter={e => { e.currentTarget.style.color = "var(--fg)"; e.currentTarget.style.background = "rgba(245,213,24,.06)"; e.currentTarget.style.paddingLeft = "14px"; }}
                       onMouseLeave={e => { e.currentTarget.style.color = "var(--fg-dim)"; e.currentTarget.style.background = "none"; e.currentTarget.style.paddingLeft = "10px"; }}
