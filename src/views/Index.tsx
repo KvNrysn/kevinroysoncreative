@@ -430,7 +430,11 @@ export default function Home() {
               <div>2 MIN</div>
             </div>
             <div style={{ aspectRatio: "16/9" }}>
-              <iframe src="https://www.youtube.com/embed/hu1dysiFAkg" title="How This Works" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ width: "100%", height: "100%", border: 0, display: "block" }} />
+              <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
+              <Script src="https://fast.wistia.com/embed/iuq7x23ol6.js" strategy="afterInteractive" type="module" />
+              <style>{`wistia-player[media-id='iuq7x23ol6']:not(:defined){background:center/contain no-repeat url('https://fast.wistia.com/embed/medias/iuq7x23ol6/swatch');display:block;filter:blur(5px);padding-top:56.25%;}`}</style>
+              {/* @ts-expect-error wistia custom element */}
+              <wistia-player media-id="iuq7x23ol6" aspect="1.7777777777777777" style={{ width: "100%", height: "100%", display: "block" }}></wistia-player>
             </div>
             <div style={{ padding: "14px 24px", borderTop: "1px solid var(--line)", fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".06em" }}>Watch: How This Works (2 min)</div>
           </div>
