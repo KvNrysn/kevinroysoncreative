@@ -735,11 +735,19 @@ export default function Home() {
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 6, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: ".12em", color: "var(--y)", textTransform: "uppercase", marginBottom: 16 }}>
                   <span style={{ width: 16, height: 1, background: "var(--y)", display: "inline-block" }} />Path 1
                 </div>
-                <h3 style={{ fontSize: 20, marginBottom: 12 }}>The First Look</h3>
-                <div style={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.03em", color: "var(--fg)", marginBottom: 8 }}>$499 <span style={{ fontSize: 14, color: "var(--fg-mute)", fontWeight: 400, letterSpacing: 0 }}>/ video</span></div>
-                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16 }}>See how we think before committing.</p>
+                <h3 style={{ fontSize: 20, marginBottom: 12 }}>One-Off Project</h3>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 10, marginBottom: 8 }}>
+                  <div style={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.03em", color: "var(--fg)", marginBottom: 0 }}><del style={{ color: "var(--fg-mute)", fontSize: 22, fontWeight: 400, textDecorationColor: "rgba(248,113,113,.7)" }}>$499</del></div>
+                  <div style={{ fontSize: 38, fontWeight: 700, letterSpacing: "-0.03em", color: "var(--y)", textShadow: "0 0 24px var(--yglow)" }}>$149</div>
+                  <div style={{ fontSize: 13, color: "var(--fg-mute)" }}>/ video</div>
+                </div>
+                <div style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(245,213,24,.08)", border: "1px solid rgba(245,213,24,.25)", padding: "7px 12px", borderRadius: 4, marginBottom: 12 }}>
+                  <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--y)", boxShadow: "0 0 8px var(--y)", flexShrink: 0, display: "inline-block" }} />
+                  <span style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: ".1em", color: "var(--y)", textTransform: "uppercase" }}>First project offer, test workflow fit</span>
+                </div>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16 }}>See the approach before committing. First video at a reduced rate so you can evaluate fit before anything longer-term.</p>
                 <ul style={{ listStyle: "none", margin: "24px 0", padding: "24px 0", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", display: "flex", flexDirection: "column", gap: 12 }}>
-                  {["Full edit", "Thumbnail design", "Script feedback", "Retention-focused structure", "High-level channel data review"].map((item, i) => (
+                  {["Full edit", "Thumbnail design", "Script feedback", "Video topic ideation", "Video flow direction", "Learning from past data and apply what we do in this video", "Retention-focused structure", "High-level channel data review"].map((item, i) => (
                     <li key={i} style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 15, color: "var(--fg-dim)", padding: "8px 10px", borderRadius: 3, transition: "all .2s", cursor: "default" }}
                       onMouseEnter={e => { e.currentTarget.style.color = "var(--fg)"; e.currentTarget.style.background = "rgba(245,213,24,.06)"; e.currentTarget.style.paddingLeft = "14px"; }}
                       onMouseLeave={e => { e.currentTarget.style.color = "var(--fg-dim)"; e.currentTarget.style.background = "none"; e.currentTarget.style.paddingLeft = "10px"; }}
