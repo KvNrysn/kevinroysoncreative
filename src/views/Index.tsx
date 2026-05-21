@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { Layout } from "@/components/Layout";
 
 const kevinPortrait = "/assets/kevin-portrait.jpg";
@@ -419,7 +420,24 @@ export default function Home() {
       <section id="about" style={{ padding: "120px 0", borderBottom: "1px solid var(--line)" }}>
         <div className="wrap">
           <span className="krc-label r">Who You're Working With</span>
-
+          {/* VSL */}
+          <div className="r r-d1" style={{ border: "1px solid var(--line)", background: "var(--bg1)", overflow: "hidden", marginBottom: 80 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "14px 24px", borderBottom: "1px solid var(--line)", fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".1em", textTransform: "uppercase" }}>
+              <div style={{ display: "flex", gap: 6 }}>
+                {[0,1,2].map(i => <span key={i} style={{ width: 9, height: 9, borderRadius: "50%", background: "rgba(255,255,255,.1)", display: "inline-block" }} />)}
+              </div>
+              <div>KRC · HOW THIS WORKS</div>
+              <div>2 MIN</div>
+            </div>
+            <div style={{ aspectRatio: "16/9" }}>
+              <iframe src="https://www.youtube.com/embed/hu1dysiFAkg" title="How This Works" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ width: "100%", height: "100%", border: 0, display: "block" }} />
+            </div>
+            <div style={{ padding: "14px 24px", borderTop: "1px solid var(--line)", fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".06em" }}>Watch: How This Works (2 min)</div>
+          </div>
+          {/* CTA below VSL */}
+          <div className="r r-d2" style={{ textAlign: "center", marginBottom: 64, marginTop: -16 }}>
+            <Link href="/contact#calendly" className="btn-y btn-y-lg">Book a Call & Get a Free Audit</Link>
+          </div>
           {/* About grid */}
           <div className="r r-d2" style={{ display: "grid", gridTemplateColumns: "340px 1fr", gap: 64, alignItems: "start" }} id="about-grid">
             <div style={{ aspectRatio: "3/4", border: "1px solid var(--line)", background: "var(--bg1)", position: "relative", overflow: "hidden" }}>
