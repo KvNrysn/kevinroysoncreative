@@ -747,6 +747,7 @@ export default function Home() {
         <div className="wrap">
           <span className="krc-label r">How We Work Together</span>
           <h2 className="r r-d1">Three ways to start.</h2>
+          <p className="r r-d1" style={{ fontSize: 16, color: "var(--fg-mute)", marginTop: 12, marginBottom: 0, lineHeight: 1.6 }}>Month to month. Most creators stay at least 90 days for the channel to start compounding. I take on a limited number of creators at a time.</p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1.15fr 1fr", gap: 20, marginTop: 60 }} className="pricing-grid">
             {/* One-Off */}
             <div className="r r-d1" style={{ display: "flex", flexDirection: "column" }}>
@@ -765,11 +766,12 @@ export default function Home() {
                 </div>
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(245,213,24,.08)", border: "1px solid rgba(245,213,24,.25)", padding: "7px 12px", borderRadius: 4, marginBottom: 12 }}>
                   <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--y)", boxShadow: "0 0 8px var(--y)", flexShrink: 0, display: "inline-block" }} />
-                  <span style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: ".1em", color: "var(--y)", textTransform: "uppercase" }}>First project offer, test workflow fit</span>
+                  <span style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: ".1em", color: "var(--y)", textTransform: "uppercase" }}>First Project Only · Test the Workflow</span>
                 </div>
-                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16 }}>See the approach before committing. First video at a reduced rate so you can evaluate fit before anything longer-term.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 8 }}>You record. I handle the rest — once.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16, color: "var(--fg-mute)" }}>One video taken end to end, so you can judge the quality and the way I work before committing to anything longer-term. One time only. Not a service tier.</p>
                 <ul style={{ listStyle: "none", margin: "24px 0", padding: "24px 0", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", display: "flex", flexDirection: "column", gap: 12 }}>
-                  {["Full edit", "Thumbnail design", "Script feedback", "Video topic ideation", "Video flow direction", "Learning from past data and apply what we do in this video", "Retention-focused structure", "High-level channel data review"].map((item, i) => (
+                  {["Full edit", "Thumbnail design", "Script feedback", "Topic direction", "Video flow direction", "Channel data review and learning", "Retention-focused structure"].map((item, i) => (
                     <li key={i} style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 15, color: "var(--fg-dim)", padding: "8px 10px", borderRadius: 3, transition: "all .2s", cursor: "default" }}
                       onMouseEnter={e => { e.currentTarget.style.color = "var(--fg)"; e.currentTarget.style.background = "rgba(245,213,24,.06)"; e.currentTarget.style.paddingLeft = "14px"; }}
                       onMouseLeave={e => { e.currentTarget.style.color = "var(--fg-dim)"; e.currentTarget.style.background = "none"; e.currentTarget.style.paddingLeft = "10px"; }}
@@ -795,13 +797,15 @@ export default function Home() {
                 onMouseLeave={e => (e.currentTarget.style.background = "var(--bg)")}
               >
                 <div style={{ display: "inline-flex", alignItems: "center", gap: 6, fontFamily: "var(--mono)", fontSize: 10, letterSpacing: ".12em", color: "var(--y)", textTransform: "uppercase", marginBottom: 16 }}>
-                  <span style={{ width: 16, height: 1, background: "var(--y)", display: "inline-block" }} />Recommended
+                  <span style={{ width: 16, height: 1, background: "var(--y)", display: "inline-block" }} />★ Recommended
                 </div>
                 <h3 style={{ fontSize: 20, marginBottom: 12 }}>Strategic Operator Retainer</h3>
                 <div style={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.03em", color: "var(--fg)", marginBottom: 8 }}>$2,000 <span style={{ fontSize: 14, color: "var(--fg-mute)", fontWeight: 400, letterSpacing: 0 }}>/ month</span></div>
-                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16 }}>The full operation.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 8 }}>You make the calls. I run the operation.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 8, color: "var(--fg-mute)" }}>The full YouTube side of your business, handled. You stay in control of every creative decision. I handle everything between them and bring the data that makes each decision smarter over time.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16, color: "var(--fg-mute)" }}>The monthly strategy call is the core of this. We sit down with your channel data, what worked, what didn't, why, and what we're doing next. Everything below supports that.</p>
                 <ul style={{ listStyle: "none", margin: "24px 0", padding: "24px 0", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", display: "flex", flexDirection: "column", gap: 12 }}>
-                  {["Channel audit at onboarding", "Content direction guidance after every upload", "Script review before recording", "Up to 5 videos edited monthly and thumbnailed", "Monthly strategy call", "Priority scheduling throughout"].map((item, i) => (
+                  {["Channel audit at onboarding", "Content direction after every upload", "Channel data consistent tracking and learning", "Script review before recording", "Up to 5 videos handled monthly edited and thumbnailed", "Priority scheduling throughout"].map((item, i) => (
                     <li key={i} style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 15, color: "var(--fg-dim)", padding: "8px 10px", borderRadius: 3, transition: "all .2s", cursor: "default" }}
                       onMouseEnter={e => { e.currentTarget.style.color = "var(--fg)"; e.currentTarget.style.background = "rgba(245,213,24,.06)"; e.currentTarget.style.paddingLeft = "14px"; }}
                       onMouseLeave={e => { e.currentTarget.style.color = "var(--fg-dim)"; e.currentTarget.style.background = "none"; e.currentTarget.style.paddingLeft = "10px"; }}
@@ -814,10 +818,10 @@ export default function Home() {
                   <Link href="/contact" style={{ display: "block", textAlign: "center", padding: "14px 20px", background: "var(--y)", color: "#000", fontWeight: 700, fontSize: 15, borderRadius: 4, transition: "all .25s", textDecoration: "none" }}
                     onMouseEnter={e => { e.currentTarget.style.background = "var(--y2)"; e.currentTarget.style.boxShadow = "0 0 30px var(--yglow)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
                     onMouseLeave={e => { e.currentTarget.style.background = "var(--y)"; e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}
-                  >Book a Call — I'll send you a custom scope</Link>
+                  >Book a Call, I'll send you a custom scope</Link>
                 </div>
               </div>
-              <div style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".06em", padding: "12px 4px", textAlign: "center" }}>Best for full workflow handoff and real results.</div>
+              <div style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".06em", padding: "12px 4px", textAlign: "center" }}>Best for full workflow handoff and real direction.</div>
             </div>
 
             {/* Custom */}
@@ -831,9 +835,10 @@ export default function Home() {
                 </div>
                 <h3 style={{ fontSize: 20, marginBottom: 12 }}>Custom Partnership</h3>
                 <div style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".08em", marginBottom: 8 }}>Custom pricing</div>
-                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16, marginTop: 24 }}>For founders whose needs don't fit a standard scope - more volume, additional services, or a leaner focused engagement.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 8, marginTop: 24 }}>Your scope. Built around you.</p>
+                <p style={{ fontSize: 15, lineHeight: 1.65, marginBottom: 16, color: "var(--fg-mute)" }}>For founders whose needs don't fit a standard scope, more volume, a leaner focused engagement, or something specific to how your channel runs.</p>
                 <ul style={{ listStyle: "none", margin: "24px 0", padding: "24px 0", borderTop: "1px solid var(--line)", borderBottom: "1px solid var(--line)", display: "flex", flexDirection: "column", gap: 12 }}>
-                  {["volume change", "service scope change"].map((item, i) => (
+                  {["Volume adjusted", "Scope adjusted"].map((item, i) => (
                     <li key={i} style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 15, color: "var(--fg-dim)", padding: "8px 10px", borderRadius: 3, transition: "all .2s", cursor: "default" }}
                       onMouseEnter={e => { e.currentTarget.style.color = "var(--fg)"; e.currentTarget.style.background = "rgba(245,213,24,.06)"; e.currentTarget.style.paddingLeft = "14px"; }}
                       onMouseLeave={e => { e.currentTarget.style.color = "var(--fg-dim)"; e.currentTarget.style.background = "none"; e.currentTarget.style.paddingLeft = "10px"; }}
@@ -849,7 +854,7 @@ export default function Home() {
                   >Book a Call</Link>
                 </div>
               </div>
-              <div style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".06em", padding: "12px 4px", textAlign: "center" }}>Best for scaled up or stripped back — whatever your channel actually needs.</div>
+              <div style={{ fontFamily: "var(--mono)", fontSize: 11, color: "var(--fg-mute)", letterSpacing: ".06em", padding: "12px 4px", textAlign: "center" }}>Best for scaled-up or stripped-back. Whatever your channel actually needs.</div>
             </div>
           </div>
         </div>
