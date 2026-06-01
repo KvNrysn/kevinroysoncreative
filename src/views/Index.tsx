@@ -260,11 +260,11 @@ export default function Home() {
             <span style={{ fontFamily: "var(--mono)", fontSize: 12, letterSpacing: ".1em", color: "var(--y)", textTransform: "uppercase" }}>Strategic Operator for Founder-Led Creators</span>
           </div>
           <h1 className="r r-d1">
-            Your channel should be growing your business.<br />
-            <span style={{ color: "var(--fg-dim)" }}>Right now it's probably just exhausting you.</span>
+            Run your channel like a CEO.<br />
+            <span style={{ color: "var(--fg-dim)" }}>Not its operator.</span>
           </h1>
           <p className="r r-d2" style={{ fontSize: "clamp(17px,1.8vw,20px)", color: "var(--fg-dim)", maxWidth: 580, marginTop: 40, lineHeight: 1.6 }}>
-            You're uploading. Managing. Second-guessing. And somehow it still feels like it's all on you. It doesn't have to be. We handle the operation. You make the calls.
+            You built a real business. But your channel still depends on you for everything including briefing, reviewing, deciding, chasing. I run the whole operation behind it, so it keeps growing your business without you stuck in the machine. You make the calls. I handle the rest.
           </p>
           <div className="r r-d3" style={{ display: "flex", alignItems: "center", gap: 16, marginTop: 40, flexWrap: "wrap" }}>
             <Link href="/contact" className="btn-y btn-y-lg">Book a Call — Get a Free Channel Audit</Link>
@@ -544,7 +544,7 @@ export default function Home() {
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 380px", borderBottom: "1px solid var(--line)" }} className="cs-story-grid">
               <div style={{ padding: 40, paddingRight: 40 }}>
-                <p style={{ fontSize: 16, lineHeight: 1.75 }}>Ritesh runs Agent Rise, a mentorship program for AI businesses scaling to 6-7 figures. YouTube was his main lead source but his mentorship was relatively new and he needed mentees compounding. Production was eating his time on top of that.<br /><br />We structured his video and built one consistent production style around his content. He stopped worrying about revisions every video. The channel kept shipping consistently while his mentorship grew to 200+ mentees.</p>
+                <p style={{ fontSize: 16, lineHeight: 1.75 }}>Ritesh runs Agent Rise, a mentorship program for founders scaling to 6–7 figures. YouTube was his main lead source, but production was eating his time and every video meant another round of briefing and revisions.<br /><br />We built one consistent production system around his content and locked the style into a single SOP — so it shipped consistently with near-zero revision rounds, and he could step back without the channel stalling.<br /><br />Results depend on the creator's offer and audience, and nothing here is a guarantee. But over the period we worked together, the channel kept shipping on his recorded content while his mentorship grew to 200+ members without him chasing it or briefing every video.</p>
               </div>
               <div style={{ padding: "40px 32px", background: "var(--bg1)", display: "flex", flexDirection: "column", gap: 12 }}>
                 {["Mentorship client flow increased to <strong>up to 20 mentees</strong>", "<strong>+~30k subscribers</strong>", "One SOP, consistent style with little to no revision round"].map((r, i) => (
@@ -569,7 +569,7 @@ export default function Home() {
                   <source src={riteshDiscordMp4} type="video/mp4" />
                 </video>
               </div>
-              <div style={{ fontSize: 15, color: "var(--fg)", marginBottom: 20 }}>Structured every video to guide viewers to a decision without making them feel sold to.</div>
+              <div style={{ fontSize: 15, color: "var(--fg)", marginBottom: 20 }}>Every video structured to guide viewers toward a decision without making them feel sold to — the same mechanism that works for any founder with an offer, applied here to a mentorship business.</div>
               <div style={{ border: "1px solid var(--line)" }}>
                 <video controls style={{ width: "100%", display: "block", height: "auto", background: "#000" }}>
                   <source src={riteshOfferMp4} type="video/mp4" />
@@ -607,7 +607,7 @@ export default function Home() {
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 380px", borderBottom: "1px solid var(--line)" }} className="cs-story-grid">
               <div style={{ padding: "40px", borderRight: "1px solid var(--line)" }}>
-                <p style={{ fontSize: 16, lineHeight: 1.75 }}>Jason had ~450K subs and only created sponsored videos. But views were all over the place, one video would hit 135K, the next would hit 10K. Sponsors couldn't commit to a CPM they couldn't predict.<br /><br />The content wasn't the problem. The way it was presented was.<br /><br />We structured how each video opened, how sponsor features were integrated, and how topics were selected to attract consistent viewer intent. Viewcount stabilized. Sponsors started queuing. Jason went from chasing brand deals to choosing them.</p>
+                <p style={{ fontSize: 16, lineHeight: 1.75 }}>Jason had ~450K subs and published only sponsored videos but views swung far, one hitting 135K and the next 10K. Sponsors couldn't commit to a CPM they couldn't predict. The content wasn't the problem. The way it was presented was.<br /><br />We structured how each video opened, how sponsor features were integrated, and how topics were chosen to attract consistent viewer intent. He only scripts and records, the operation handles everything after.<br /><br />Results depend on the creator's offer and audience, and nothing here is a guarantee. But over the period we worked together, view consistency improved, sponsors moved from occasional to consistently queued, and Jason went from chasing brand deals to choosing them.</p>
               </div>
               <div style={{ padding: "40px 32px", background: "var(--bg1)", display: "flex", flexDirection: "column", gap: 12 }}>
                 {["Grew from ~450K to <strong>700K+ subscribers</strong>", "<strong>4× → Average views per upload increased</strong>", "Brand deals went from occasional to <strong>consistently queued</strong>", "Publishing volume increased to <strong>up to 8 videos per week</strong>"].map((r, i) => (
@@ -622,7 +622,7 @@ export default function Home() {
               </div>
             </div>
             <div style={{ padding: 40, borderTop: "1px solid var(--line)", background: "var(--bg)" }}>
-              <div style={{ fontSize: 15, color: "var(--fg)", marginBottom: 20 }}>Average views jumped 4× after making sure sponsor's product feature are being emphasized and viewers can visualize real use case with these features</div>
+              <div style={{ fontSize: 15, color: "var(--fg)", marginBottom: 20 }}>Average views jumped after restructuring how each video presents its value so viewers can picture real use — the same structural fix that applies to any founder selling something, here applied to software/AI reviews.</div>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 60px 1fr", gap: 0, marginBottom: 40, border: "1px solid var(--line)" }} className="ba-grid">
                 <div>
                   <div style={{ fontFamily: "var(--mono)", fontSize: 11, letterSpacing: ".1em", padding: "12px 20px", textTransform: "uppercase", color: "var(--fg-mute)", background: "var(--bg1)", borderBottom: "1px solid var(--line)" }}>Before — avg 10K–135K views</div>
@@ -747,6 +747,7 @@ export default function Home() {
         <div className="wrap">
           <span className="krc-label r">How We Work Together</span>
           <h2 className="r r-d1">Three ways to start.</h2>
+          <p className="r r-d1" style={{ fontSize: 16, color: "var(--fg-dim)", marginTop: 16, marginBottom: 0, lineHeight: 1.6, maxWidth: 620 }}>Not an editor you manage. Not an AI you babysit. One operator who owns strategy, direction, and delivery the way a content lead would, without the in-house cost.</p>
           <p className="r r-d1" style={{ fontSize: 16, color: "var(--fg-mute)", marginTop: 12, marginBottom: 0, lineHeight: 1.6 }}>Month to month. Most creators stay at least 90 days for the channel to start compounding. I take on a limited number of creators at a time.</p>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1.15fr 1fr", gap: 20, marginTop: 60 }} className="pricing-grid">
             {/* One-Off */}
